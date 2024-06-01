@@ -18,11 +18,11 @@ const Calculator = () => {
   };
 
   return (
-    <div>
+    <div className='bg-green-100'>
       <h1>Average Calculator</h1>
-      <div>
-        <label htmlFor="numberId">Number ID:</label>
-        <select id="numberId" value={numberId} onChange={e => setNumberId(e.target.value)}>
+      <div className='flex flex-col '>
+        <label className='' htmlFor="numberId">Number ID:</label>
+        <select className='border-2 border-black' id="numberId" value={numberId} onChange={e => setNumberId(e.target.value)}>
           <option value="p">Prime</option>
           <option value="f">Fibonacci</option>
           <option value="e">Even</option>
